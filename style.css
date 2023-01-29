@@ -8,7 +8,7 @@
   --font4: 18px;
 }
 
-  /* Обнуление */
+/* Обнуление */
 *,
 *::before,
 *::after {
@@ -30,7 +30,7 @@ li {
 }
 
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 h1,
@@ -69,6 +69,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: url(./assets/Img/png/bg.png);
+  background-repeat: no-repeat;
+  background-origin: initial;
 }
 
 .menu {
@@ -88,5 +91,17 @@ body {
   gap: 10px;
 }
 
+.logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  transition: 1s;
+}
 
+.menu-link:hover {
+  color: var(--color-gold);
+  transition: 1s;
+}
 
+.switch-lng-link:hover {
+  color: var(--color-gold);
+  transition: 1s;
+}
