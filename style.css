@@ -2,10 +2,10 @@
   --color-gold: #bdae82;
   --color-black: #000;
   --color-white: #fff;
-  --font1: 60px;
-  --font2: 40px;
-  --font3: 20px;
-  --font4: 18px;
+  --font60: 60px;
+  --font40: 40px;
+  --font20: 20px;
+  --font18: 18px;
 }
 
 /* Обнуление */
@@ -33,7 +33,6 @@ img {
   vertical-align: top;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -47,8 +46,8 @@ html,
 body {
   height: 100%;
   line-height: 1;
-  background: var(--color-black);
-  font-size: var(--font4);
+  background: var(--color-white);
+  font-size: var(--font20);
   color: var(--color-white);
   font-weight: 400;
   font-family: Inter;
@@ -57,7 +56,6 @@ body {
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
   min-height: 100%;
   overflow: hidden;
   display: flex;
@@ -104,4 +102,54 @@ body {
 .switch-lng-link:hover {
   color: var(--color-gold);
   transition: 1s;
+}
+
+.section {
+  padding: 0 20px;
+}
+
+/* ---------------------------------BODY TOP---------------------------------------------------------------------- */
+.top__section {
+  background-image: url(./assets/Img/png/bg.png);
+  background-position-y: -19px;
+  min-height: 890px;
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+}
+
+.top-content {
+  margin-left: 60px;
+}
+
+.golden-button {
+  cursor: pointer;
+
+  width: 219px;
+  padding: 8px 70px 7px 70px;
+
+  font-family: inherit;
+  font-size: var(--font20);
+  line-height: 40px;
+
+  border: 0;
+  background-color: var(--color-gold);
+}
+
+h1 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: var(--font60);
+  line-height: 120px;
+  margin: 0;
+  padding: 0;
+  color: var(--color-white);
+}
+
+.hero-text {
+  font-family: "Inter", sans-serif;
+  line-height: var(--font40);
+  width: 468px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
