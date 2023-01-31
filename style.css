@@ -115,7 +115,7 @@ h2 {
   text-align: center; 
   border-bottom: 1px solid var(--color-gold); 
   line-height: 0.1em;
-  margin: 10px 0 20px; 
+  margin: 5px 0 20px; 
 } 
 
 h2 span { 
@@ -123,12 +123,14 @@ h2 span {
   font-family: 'Merriweather';
   background: var(--color-black);
   color: var(--color-gold); 
-  padding:0 10px;   
+  padding:0 20px;   
 }
 
 .title__name {
   min-width: 700px;
-  margin: 100px auto;
+  margin: auto;
+  margin-top: 130px;
+  margin-bottom: 75px;
 }
 
 /* ---------------------------------BODY TOP---------------------------------------------------------------------- */
@@ -138,7 +140,7 @@ h2 span {
   min-height: 890px;
   display: flex;
   flex-direction: column;
-  gap: 180px;
+  gap: 195px;
 }
 
 .top-content {
@@ -181,4 +183,37 @@ h1 {
 
 .skills__section {
   display: flex;
+  flex-direction: column;
 }
+
+.skills__discribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  gap: 50px;
+}
+
+.discribe__skills {
+  text-align: center;
+}
+
+.title__text {
+  font-weight: 700;
+  font-size: var(--font20);
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.describe__text {
+  font-weight: 400;
+  font-size: var(--font18);
+  line-height: 36px;
+}
+
+.skills {
+  display: flex;
+  gap: 60px;
+  margin-left: 9px;
+}
+
