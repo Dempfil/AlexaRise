@@ -33,7 +33,6 @@ img {
   vertical-align: top;
 }
 
-h2,
 h3,
 h4,
 h5,
@@ -60,6 +59,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background-color: var(--color-black);
 }
 
 /* -----------------------HEADER----------------------------- */
@@ -68,6 +68,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-image: url(./assets/Img/png/bg.png);
+  background-position-y: 90px;
   background-repeat: no-repeat;
   background-origin: initial;
 }
@@ -106,6 +107,28 @@ body {
 
 .section {
   padding: 0 20px;
+}
+
+/* -------------------------------TITLE-------------------------------------- */
+h2 {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid var(--color-gold); 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+
+h2 span { 
+  font-size: var(--font40);
+  font-family: 'Merriweather';
+  background: var(--color-black);
+  color: var(--color-gold); 
+  padding:0 10px;   
+}
+
+.title__name {
+  min-width: 700px;
+  margin: 100px auto;
 }
 
 /* ---------------------------------BODY TOP---------------------------------------------------------------------- */
@@ -149,7 +172,13 @@ h1 {
 .hero-text {
   font-family: "Inter", sans-serif;
   line-height: var(--font40);
-  width: 468px;
+  max-width: 468px;
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+/* ------------------------------------SKILLS------------------------------ */
+
+.skills__section {
+  display: flex;
 }
