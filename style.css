@@ -62,6 +62,43 @@ body {
   background-color: var(--color-black);
 }
 
+/* -------------------------------------BUTTONS-------------------------------------------------- */
+
+.just-button {
+  cursor: pointer;
+
+  width: 219px;
+  padding: 8px 70px 7px 70px;
+  line-height: 40px;
+
+  font-family: inherit;
+  font-size: var(--font20);
+  color: var(--color-gold);
+  border: 2px solid var(--color-gold);
+
+  background-color: transparent;
+}
+
+.golden-button {
+  cursor: pointer;
+
+  width: 219px;
+  padding: 8px 70px 7px 70px;
+
+  font-family: inherit;
+  font-size: var(--font20);
+  line-height: 40px;
+
+  border: 0;
+  background-color: var(--color-gold);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 /* -----------------------HEADER----------------------------- */
 .header {
   display: flex;
@@ -106,24 +143,26 @@ body {
 }
 
 .section {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
 }
 
 /* -------------------------------TITLE-------------------------------------- */
 h2 {
-  width: 100%; 
-  text-align: center; 
-  border-bottom: 1px solid var(--color-gold); 
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--color-gold);
   line-height: 0.1em;
-  margin: 5px 0 20px; 
-} 
+  margin: 5px 0 20px;
+}
 
-h2 span { 
+h2 span {
   font-size: var(--font40);
   font-family: 'Merriweather';
   background: var(--color-black);
-  color: var(--color-gold); 
-  padding:0 20px;   
+  color: var(--color-gold);
+  padding: 0 20px;
 }
 
 .title__name {
@@ -137,28 +176,15 @@ h2 span {
 .top__section {
   background-image: url(./assets/Img/png/bg.png);
   background-position-y: -19px;
+  background-repeat: no-repeat;
   min-height: 890px;
   display: flex;
   flex-direction: column;
-  gap: 195px;
+  gap: 175px;
 }
 
 .top-content {
   margin-left: 60px;
-}
-
-.golden-button {
-  cursor: pointer;
-
-  width: 219px;
-  padding: 8px 70px 7px 70px;
-
-  font-family: inherit;
-  font-size: var(--font20);
-  line-height: 40px;
-
-  border: 0;
-  background-color: var(--color-gold);
 }
 
 h1 {
@@ -179,11 +205,11 @@ h1 {
   margin-bottom: 30px;
 }
 
+
 /* ------------------------------------SKILLS------------------------------ */
 
 .skills__section {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .skills__discribe {
@@ -217,3 +243,12 @@ h1 {
   margin-left: 9px;
 }
 
+/* -------------------------------------------PORTFOLIO----------------------------------------------------------------*/
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 60px;
+}
