@@ -252,3 +252,18 @@ h1 {
   gap: 25px;
   margin-top: 60px;
 }
+
+/* -------------------------------------------VIDEO---------------------------------------------------------------*/
+
+
+.video-player {
+  min-height: 705px;
+  background-image: url(./assets/Img/png/video/video-player.png);
+  background-repeat: no-repeat;
+  background-position-y: 1px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
