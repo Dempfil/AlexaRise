@@ -68,7 +68,7 @@ body {
   cursor: pointer;
 
   width: 219px;
-  padding: 8px 70px 7px 70px;
+  padding: 8px 20px 7px 20px;
   line-height: 40px;
 
   font-family: inherit;
@@ -83,7 +83,7 @@ body {
   cursor: pointer;
 
   width: 219px;
-  padding: 8px 70px 7px 70px;
+  padding: 8px 20px 7px 20px;
 
   font-family: inherit;
   font-size: var(--font20);
