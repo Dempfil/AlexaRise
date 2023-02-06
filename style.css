@@ -45,7 +45,7 @@ h6 {
 html,
 body {
   line-height: 1;
-  background: var(--color-white);
+  background: var(--color-black);
   font-size: var(--font20);
   color: var(--color-black);
   font-weight: 400;
@@ -83,6 +83,11 @@ p {
   background-color: transparent;
 }
 
+.just-button:hover {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+}
+
 .golden-button {
   cursor: pointer;
 
@@ -100,7 +105,8 @@ p {
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
 /* -----------------------HEADER----------------------------- */
@@ -127,6 +133,7 @@ p {
   display: flex;
   gap: 10px;
   color: var(--color-white);
+
 }
 
 .logo:hover {
@@ -137,6 +144,11 @@ p {
 .menu-link:hover {
   color: var(--color-gold);
   transition: 1s;
+}
+
+.switch-lng-link {
+  font-weight: 700;
+  font-size: var(--font20);
 }
 
 .switch-lng-link:hover {
@@ -168,9 +180,10 @@ h2 span {
 }
 
 .title__name {
+  margin: auto;
   min-width: 700px;
-  margin-top: 130px;
-  margin-bottom: 75px;
+  margin-top: 127px;
+  margin-bottom: 80px;
 }
 
 /* ---------------------------------BODY TOP---------------------------------------------------------------------- */
@@ -235,6 +248,7 @@ h1 {
   font-size: var(--font20);
   line-height: 40px;
   margin-bottom: 20px;
+  color: var(--color-white);
 }
 
 .describe__text {
@@ -247,9 +261,13 @@ h1 {
   display: flex;
   gap: 60px;
   margin-left: 9px;
+  flex-wrap: wrap;
 }
 
 /* -------------------------------------------PORTFOLIO----------------------------------------------------------------*/
+.portfolio__section {
+  margin-bottom: 5px;
+}
 
 .pictures {
   display: flex;
@@ -260,6 +278,11 @@ h1 {
 }
 
 /* -------------------------------------------VIDEO---------------------------------------------------------------*/
+
+.video:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  transition: 1s;
+}
 
 
 .video-player {
@@ -272,4 +295,48 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* ----------------------------------------PRICE--------------------------------------------------------------------------*/
+.section-price {
+  min-width: 450px;
+  min-height: 505px;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid var(--color-gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.price-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.prise {
+  font-family: Merriweather;
+  font-size: 24px;
+  color: var(--color-gold);
+}
+
+.title-prise {
+  margin-top: 52px;
+  color: var(--color-white);
+  font-size: 28px;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+}
+
+.prise-list {
+  line-height: 36px;
+}
+
+.prise__inner-list {
+  font-size: var(--font18);
+  font-weight: 400;
+  line-height: 36px;
+
 }
