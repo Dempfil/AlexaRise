@@ -27,6 +27,7 @@ ul,
 ol,
 li {
   list-style: none;
+  color: var(--color-white);
 }
 
 img {
@@ -43,11 +44,10 @@ h6 {
 
 html,
 body {
-  height: 100%;
   line-height: 1;
   background: var(--color-white);
   font-size: var(--font20);
-  color: var(--color-white);
+  color: var(--color-black);
   font-weight: 400;
   font-family: Inter;
 }
@@ -60,6 +60,10 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--color-black);
+}
+
+p {
+  color: var(--color-white);
 }
 
 /* -------------------------------------BUTTONS-------------------------------------------------- */
@@ -104,27 +108,25 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(./assets/Img/png/bg.png);
-  background-position-y: 90px;
-  background-repeat: no-repeat;
-  background-origin: initial;
 }
 
 .menu {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   align-items: center;
   justify-content: space-between;
 }
 
 .menu-list {
   display: flex;
-  gap: 24px;
+  gap: 30px;
+  color: var(--color-white);
 }
 
 .switch-lng {
   display: flex;
   gap: 10px;
+  color: var(--color-white);
 }
 
 .logo:hover {
@@ -153,7 +155,7 @@ h2 {
   width: 100%;
   text-align: center;
   border-bottom: 1px solid var(--color-gold);
-  line-height: 0.1em;
+  line-height: 2px;
   margin: 5px 0 20px;
 }
 
@@ -167,7 +169,6 @@ h2 span {
 
 .title__name {
   min-width: 700px;
-  margin: auto;
   margin-top: 130px;
   margin-bottom: 75px;
 }
@@ -180,11 +181,15 @@ h2 span {
   min-height: 890px;
   display: flex;
   flex-direction: column;
-  gap: 175px;
 }
 
 .top-content {
-  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  width: 90%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -203,6 +208,7 @@ h1 {
   max-width: 468px;
   margin-top: 10px;
   margin-bottom: 30px;
+  color: var(--color-white);
 }
 
 
