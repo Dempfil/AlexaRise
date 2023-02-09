@@ -402,3 +402,24 @@ h1 {
   font-family: inherit;
   margin-bottom: 25px;
 }
+
+/* --------------------------------------------------------------FOOTER------------------------------------------------------*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 188px;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 18px;
+  list-style-type: none;
+}
