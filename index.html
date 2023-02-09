@@ -48,9 +48,9 @@
                            </li>
                         </ul>
                         <div class="switch-lng">
-                           <button id="en" class="switch-lng-link" href="#">en</button>
+                           <a id="en" class="switch-lng-link" href="#">en</a>
                            <span>/</span>
-                           <button id="ru" class="switch-lng-link" href="#">ru</button>
+                           <a id="ru" class="switch-lng-link" href="#">ru</a>
                         </div>
                   </nav>         
                </div>
@@ -230,11 +230,23 @@
                         Order shooting
                      </button>
                   </div>
-               </div>
-               
+               </div>               
             </section>
-
-            <section></section>
+            <section class="section section-contact-me">
+               <div class="form-contact-me">
+                  <div isTranslate="contact-me" class="contact">Contact me</div>
+                     <form class="contact-form" action="#">
+                        <div class="fname-inner">
+                           <input  isTranslate="email" class="finput" type="email" name="email" placeholder="E-mail">
+                           <input  isTranslate="phone" class="finput" type="tel" name="phone" placeholder="Phone">
+                        </div>
+                        <div class="message">
+                           <textarea isTranslate="message" class="message-inner" placeholder="Message"></textarea>
+                        </div>
+                        <button isTranslate="send-message" class="golden-button send-button" isChangeColor>Send message</button>
+                     </form>
+               </div>
+            </section>
       </div>
 
 
