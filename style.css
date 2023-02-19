@@ -174,7 +174,7 @@ p {
   content: '';
   position: absolute;
   display: block;
-  width: 150%;
+  width: 180%;
   height: 1px;
   background: var(--color-gold);
 }
