@@ -62,44 +62,44 @@ body {
   background-color: var(--color-black);
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
 p {
   color: var(--color-white);
 }
 
 /* -------------------------------------BUTTONS-------------------------------------------------- */
 
-.just-button {
+.btn {
   cursor: pointer;
-
   width: 219px;
   padding: 8px 20px 7px 20px;
-  line-height: 40px;
-
-  font-family: inherit;
   font-size: var(--font20);
-  color: var(--color-gold);
-  border: 2px solid var(--color-gold);
-
-  background-color: transparent;
+  line-height: 40px;
+  background-color: var(--color-gold);
+  transition: bacground-color 0.3s ease-in;
 }
 
-.just-button:hover {
+.btn:hover {
+  background: none;
+  border: 2px solid var(--color-gold);
+  color: var(--color-gold);
+}
+
+.btn--alternative {
+  background: none;
+  border: 2px solid var(--color-gold);
+  color: var(--color-gold);
+  transition: bacground-color 0.3s ease-in;
+}
+
+.btn--alternative:hover {
   background-color: var(--color-gold);
   color: var(--color-black);
-}
-
-.golden-button {
-  cursor: pointer;
-
-  width: 219px;
-  padding: 8px 20px 7px 20px;
-
-  font-family: inherit;
-  font-size: var(--font20);
-  line-height: 40px;
-
-  border: 0;
-  background-color: var(--color-gold);
 }
 
 .buttons {
@@ -116,59 +116,75 @@ p {
   align-items: center;
 }
 
-.menu {
+.header__menu {
   display: flex;
   gap: 30px;
   align-items: center;
   justify-content: space-between;
 }
 
-.menu-list {
+.header__menu-list {
   display: flex;
   gap: 30px;
   color: var(--color-white);
 }
 
-.switch-lng {
+.header__switch-lng {
   display: flex;
   gap: 10px;
   color: var(--color-white);
 
 }
 
-.logo:hover {
+.header__logo:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
   transition: 1s;
 }
 
-.menu-link:hover {
+.header__menu-link:hover {
   color: var(--color-gold);
   transition: 1s;
 }
 
-.switch-lng-link {
+.header__switch-lng-link {
   font-weight: 700;
   font-size: var(--font20);
 }
 
-.switch-lng-link:hover {
+.header__switch-lng-link:hover {
   color: var(--color-gold);
   transition: 1s;
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
-}
+
 
 /* -------------------------------TITLE-------------------------------------- */
-h2 {
-  width: 100%;
+.title {
+  font-size: var(--font40);
+  font-family: 'Merriweather';
+  color: var(--color-gold);
   text-align: center;
-  border-bottom: 1px solid var(--color-gold);
-  line-height: 2px;
-  margin: 5px 0 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.title::before,
+.title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 150%;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+.title::before {
+  left: -180%;
+}
+
+.title::after {
+  right: -180%;
 }
 
 h2 span {
@@ -179,17 +195,16 @@ h2 span {
   padding: 0 20px;
 }
 
-.title__name {
-  margin: auto;
-  min-width: 700px;
-  margin-top: 127px;
-  margin-bottom: 80px;
+.title-name {
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------------------------BODY TOP---------------------------------------------------------------------- */
-.top__section {
+.top-section {
   background-image: url(./assets/Img/png/bg.png);
-  background-position-y: -19px;
   background-repeat: no-repeat;
   min-height: 890px;
   display: flex;
@@ -215,7 +230,7 @@ h1 {
   color: var(--color-white);
 }
 
-.hero-text {
+.top-content__text {
   font-family: "Inter", sans-serif;
   line-height: var(--font40);
   max-width: 468px;
@@ -227,32 +242,26 @@ h1 {
 
 /* ------------------------------------SKILLS------------------------------ */
 
-.skills__section {
-  margin-bottom: 10px;
-}
-
-.skills__discribe {
+.skills__name {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 300px;
-  gap: 50px;
+  gap: 20px;
 }
 
-.discribe__skills {
+.discribe-skills {
   text-align: center;
 }
 
-.title__text {
+.discribe-skills__title-text {
   font-weight: 700;
   font-size: var(--font20);
   line-height: 40px;
-  margin-bottom: 20px;
   color: var(--color-white);
 }
 
-.describe__text {
-  font-weight: 400;
+.discribe-skills__text {
   font-size: var(--font18);
   line-height: 36px;
 }
