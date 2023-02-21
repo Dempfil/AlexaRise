@@ -274,8 +274,9 @@ h1 {
 }
 
 /* -------------------------------------------PORTFOLIO----------------------------------------------------------------*/
-.portfolio__section {
-  margin-bottom: 5px;
+
+.portfolio {
+  height: 250px;
 }
 
 .pictures {
@@ -287,6 +288,10 @@ h1 {
 }
 
 /* -------------------------------------------VIDEO---------------------------------------------------------------*/
+
+.video__section {
+  height: 940px;
+}
 
 .video:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
@@ -308,7 +313,8 @@ h1 {
 
 /* ----------------------------------------PRICE--------------------------------------------------------------------------*/
 .price__section {
-  margin-bottom: 100px;
+  height: 750px;
+  margin-bottom: 95px;
 }
 
 .section-price {
@@ -414,7 +420,7 @@ h1 {
 
 /* --------------------------------------------------------------FOOTER------------------------------------------------------*/
 .footer {
-  display: flex;
+  height: 150px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -424,11 +430,11 @@ h1 {
 .socials-list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  width: 188px;
-  height: 50px;
-  margin-right: 20px;
-  margin-top: 18px;
   list-style-type: none;
+  gap: 20px;
+}
+
+.footer-container__git {
+  display: flex;
+  gap: 24px;
 }
